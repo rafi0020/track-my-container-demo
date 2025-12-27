@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Track My Container</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Redirects all 404s to the root with the path stored in sessionStorage
+      sessionStorage.redirect = location.href;
+      location.replace(location.pathname.split('/').slice(0, 2).join('/') + '/#/');
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
