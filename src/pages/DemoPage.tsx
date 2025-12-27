@@ -234,14 +234,14 @@ export default function DemoPage() {
         </div>
       </div>
 
-      {/* Results */}
-      <DashboardPanel />
-
       {/* ISO 6346 Validation & Artifacts - side by side */}
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <Iso6346Panel />
         <ArtifactsViewer />
       </div>
+
+      {/* Results */}
+      <DashboardPanel />
 
       {/* Logs */}
       <LogsConsole />
